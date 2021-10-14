@@ -1,3 +1,4 @@
+#! /bin/bash
 NUM_PROC=$1
 shift
 launcher=$(python -c "from os import path; import torch; print(path.join(path.dirname(torch.__file__), 'distributed', 'launch.py'))")
