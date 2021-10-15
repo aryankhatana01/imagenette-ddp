@@ -9,7 +9,6 @@ ADD requirements.txt /imagenet-dpp-exp/
 
 RUN apt-get update -y
 RUN apt-get install wget -y
-RUN apt install python3-pip
 
 RUN apt install nvidia-cuda-toolkit
 
