@@ -10,7 +10,7 @@ ADD requirements.txt /imagenet-dpp-exp/
 RUN apt-get update -y
 RUN apt-get install wget -y
 
-RUN apt install nvidia-cuda-toolkit
+RUN apt-get install nvidia-cuda-toolkit
 
 RUN cd data
 RUN wget https://s3.amazonaws.com/fast-ai-imageclas/imagenette2-160.tgz
