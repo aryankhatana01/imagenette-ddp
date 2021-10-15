@@ -15,7 +15,9 @@ RUN wget https://s3.amazonaws.com/fast-ai-imageclas/imagenette2-160.tgz
 RUN tar -xvf imagenette2-160.tgz
 RUN cd ..
 
-RUN /usr/local/bin/python -m pip install --upgrade pip
-RUN python3 -m pip install -r requirements.txt
-RUN python3 -m pip install torch torchvision
+RUN pip3 install --upgrade pip
+RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip3 install --no-cache-dir torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html
+
+
 
